@@ -1142,10 +1142,9 @@
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" remote="aosp" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" remote="aosp" />
 
-
   <include name="snippets/lineage.xml" />
+  <include name="snippets/calyxos.xml" />
   <include name="snippets/local.xml" />
   <include name="snippets/eos.xml" />
-  <include name="calyxos.xml" />
 
 </manifest>
