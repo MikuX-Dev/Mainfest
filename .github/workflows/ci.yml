@@ -22,7 +22,7 @@ jobs:
         run: git fetch gitlab
       
       - name: Merge changes from GitLab into GitHub repository
-        run: git merge gitlab/v1-s --allow-unrelated-histories
+        run: git merge gitlab/v1-t --allow-unrelated-histories
       
       - name: Push changes to GitHub repository
         run: git push origin BotOS-1.0
