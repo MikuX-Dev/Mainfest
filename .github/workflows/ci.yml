@@ -5,7 +5,7 @@ on:
     - cron: '0 0 * * *' # Runs every day at midnight
   push:
     branches:
-      - main # replace with the branch you want to update
+      - BB-BotOS-1.0 # replace with the branch you want to update
 
 jobs:
   update:
@@ -28,4 +28,4 @@ jobs:
         run: git merge gitlab/v1-t --allow-unrelated-histories # replace with the branch you want to merge
       
       - name: Push changes to GitHub repository
-        run: git push origin BB-BotOS # replace with the branch you want to push the changes to
+        run: git push origin BB-BotOS-1.0 # replace with the branch you want to push the changes to
