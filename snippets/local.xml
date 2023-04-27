@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	
-    <remote name="fdroid" 
-	        fetch="https://gitlab.com/fdroid/" />
 
-    <remote name="sfx-Android" 
-	        fetch="https://github.com/sfX-Android/" />
- 
-    <remote name="The-Bot-BB" 
-	        fetch="https://github.com/The-Bot-BB/"
-	        revision="refs/heads/main" />
+    <remote name="fdroid"
+                fetch="https://gitlab.com/fdroid/" />
 
-    <remote name="codelinaro"
-	        fetch="https://git.codelinaro.org/clo/la/kernel/msm-4.9"
-	        revision="refs/heads/LA.UM.8.6.2.r1-09500-89xx.0" />
+    <remote name="sfx-Android"
+                fetch="https://github.com/sfX-Android/" />
+
+    <remote name="The-Bot-BB"
+            fetch="https://github.com/The-Bot-BB/"
+            revision="refs/heads/main" />
+
+    <remote name="BB-BoTOS"
+            fetch="https://gitlab.com/bb-botos/device-trees-ysl" />
+
+    <!-- remote name="codelinaro"
+                fetch="https://git.codelinaro.org/clo/la/kernel/msm-4.9"
+                revision="refs/heads/LA.UM.8.6.2.r1-09500-89xx.0" /> -->
 
     <!-- <remote name="Professor-Berni"
-	        fetch="https://github.com/Professor-Berni/"A
+	        fetch="https://github.com/Professor-Berni/"
 	        revision="master" -->
 
             <!-- Project starts -->
 
     <!-- KERNEL -->
-    <!-- project name="The-Bot-BB/kernel-xiaomi-ysl" path="device/kernel/ysl" remote="github" /> -->
-    <project name="kernel/msm-4.9" path="device/kernel/ysl" remote="codelinaro" revision="LA.UM.8.6.2.r1-09500-89xx.0" />
+    <project name="BB-BoTOS/device-trees-ysl/kernel_xiaomi_ysl_mikasa" path="device/kernel/ysl" remote="gitlab" revision="refs/heads/mikasa" />
+    <!-- project name="kernel/msm-4.9" path="device/kernel/ysl" remote="gitlab"  /> -->
 
     <!-- DEVICE TREES -->
-    <project name="The-Bot-BB/device-xiaomi-ysl" path="device/xiaomi/ysl" remote="github" />
+    <project name="BB-BoTOS/device-trees-ysl/device-xiaomi-ysl" path="device/xiaomi/ysl" remote="gitlab" revision="refs/heads/main" />
 
     <!-- VENDOR TREE -->
-    <project name="The-Bot-BB/device_vendor_ysl" path="device/vendor/ysl" remote="github"/>
+    <project name="BB-BoTOS/device-trees-ysl/device_vendor_ysl" path="device/vendor/ysl" remote="gitlab" revision="refs/heads/main" />
 
     <!-- /e/ vendor repo -->
     <project name="steadfasterX/android_vendor_e" path="vendor/e" remote="e" />
@@ -37,8 +40,8 @@
     <!-- /e/ vendor repo mods (OPTIONAL) -->
     <!-- project name="android_vendor_e-mod" path="vendor/e-mod" remote="github" /> -->
 
-    <!-- F-Droid (OPTIONAL - see topic "F-Droid") -->    
-    <!-- project name="android_vendor_fdroid" path="vendor/fdroid" remote="github" revision="master" /> -->
-    <!-- project name="privileged-extension.git" path="packages/apps/F-DroidPrivilegedExtension" remote="fdroid" revision="master" /> -->
+    <!-- F-Droid (OPTIONAL - see topic "F-Droid") -->
+    <!-- project name="android_vendor_fdroid" path="vendor/fdroid" remote="github"  /> -->
+    <!-- project name="privileged-extension.git" path="packages/apps/F-DroidPrivilegedExtension" remote="fdroid"  /> -->
 
 </manifest>
